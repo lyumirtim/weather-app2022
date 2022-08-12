@@ -1,0 +1,73 @@
+.back-video {
+  position: absolute;
+  z-index: -1;
+  right: 0%;
+  bottom: 0%;
+}
+.card {
+  background-color: rgba(3, 14, 117, 0.3);
+  margin-top: 50px;
+  box-shadow: 2px 2px 2px 1px rgba(1, 1, 54, 0.2);
+  border: 0ch;
+  border-radius: 5px;
+}
+.col-sm-7,
+.col-sm-5 {
+  padding-top: 10px;
+}
+h1,
+h3,
+.col-6 {
+  font-family: "Berkshire Swash", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Kreon", serif;
+}
+
+h1,
+h3 {
+  margin-left: 20px;
+  color: rgb(243, 184, 75);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+.city {
+  color: rgba(14, 6, 129, 0.747);
+}
+.grades {
+  color: whitesmoke;
+}
+.col-6 {
+  color: rgb(243, 184, 75);
+  font-size: 22px;
+  font-weight: 100;
+  text-align: center;
+}
+.p-3 border {
+  border-radius: 10px;
+}
+.current-weather {
+  color: rgb(243, 184, 75);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-left: 250px;
+  margin-top: 5px;
+  font-size: 170px;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 19px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.btn btn-warning {
+  color: rgb(243, 184, 75);
+  margin-left: 20px;
+}
