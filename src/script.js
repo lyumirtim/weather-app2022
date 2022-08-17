@@ -20,7 +20,8 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  console.log(response.data.main.temp);
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 function citySearch(event) {
   event.preventDefault();
