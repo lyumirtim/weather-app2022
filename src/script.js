@@ -42,6 +42,8 @@ form.addEventListener("submit", citySearch);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
+  celciusTemp.classList.remove("active");
+  fahrenheitTemperature.classList.add("active");
   let fahrenheitTemperature = (19 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Mathr.round(fahrenheitTemperature);
