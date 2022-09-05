@@ -43,9 +43,10 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   celciusTemp.classList.remove("active");
   fahreneitTemp.classList.add("active");
-  let fahrenheitTemperature = (celciusTemp * 9) / 5 + 32;
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celciusTemperature = response.data.main.temp;
 }
 
 let fahreneitTemp = document.querySelector("#fahrenheit-temp");
