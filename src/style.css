@@ -16,14 +16,13 @@
   padding-top: 10px;
 }
 h1,
-h2,
 h3,
+ul,
 .col-6 {
   font-family: "Berkshire Swash", cursive;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Kreon", serif;
 }
-
 h1,
 h3 {
   margin-left: 20px;
@@ -32,31 +31,32 @@ h3 {
 .city {
   color: rgba(14, 6, 129, 0.747);
 }
-h1 {
-  font-size: 50px;
+h1,
+#fahrenheit-temp,
+#celcius-temp,
+.separator {
+  font-size: 33px;
+  text-decoration: none;
 }
-h3,
-h2 {
-  font-size: 30px;
+h3 {
+  font-size: 27px;
+}
+
+ul {
+  list-style: none;
+  color: whitesmoke;
+  font-size: 20px;
   font-weight: 100;
-}
-h2 {
-  margin-left: 20px;
   text-transform: capitalize;
+  margin-top: 27%;
+  margin-left: 20%;
 }
 
 .grades,
-.units,
-h2 {
+.separator {
   color: whitesmoke;
 }
 
-#celcius-temp,
-#fahrenheit-temp,
-.separator {
-  text-decoration: none;
-  font-size: 35px;
-}
 .col-6 {
   color: rgb(243, 184, 75);
   font-size: 23px;
@@ -67,15 +67,16 @@ h2 {
   border-radius: 10px;
 }
 #icon {
-  margin-left: 60%;
+  margin-left: 40%;
 }
 p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 300;
   margin-left: 10px;
 }
 .signature {
+  font-size: 15px;
   text-align: center;
   font-weight: 300px;
 }
