@@ -17,9 +17,8 @@ h3.innerHTML = `${day}, ${hours}:${minutes}`;
 
 function showWeather(response) {
   document.querySelector("#special-city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  celciusTemperature = document.querySelector("#temperature").innerHTML =
+    Math.round(response.data.main.temp);
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -49,7 +48,6 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  celciusTemperature = response.data.main.temp;
 }
 
 let fahreneitTemp = document.querySelector("#fahrenheit-temp");

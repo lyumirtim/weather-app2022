@@ -44,7 +44,8 @@ h3 {
 
 ul {
   list-style: none;
-  color: rgb(241, 237, 237);
+  color: whitesmoke;
+  opacity: 0.8;
   font-size: 20px;
   font-weight: 100;
   text-transform: capitalize;
@@ -68,6 +69,8 @@ ul {
 }
 #icon {
   margin-left: 40%;
+}
+.weather-forecast-date {
 }
 p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
