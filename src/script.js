@@ -22,8 +22,7 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#windspeed").innerHTML =
-    response.data.main.wind.speed;
+  document.querySelector("#windspeed").innerHTML = response.data.wind.speed;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
