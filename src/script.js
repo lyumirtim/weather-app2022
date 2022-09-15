@@ -15,6 +15,40 @@ let day = days[now.getDay()];
 
 h3.innerHTML = `${day}, ${hours}:${minutes}`;
 
+
+function displayweatherForecast() {
+  let weatherForecastElement = document.querySelector("#weather-forecast");
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let weatherForecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    weatherForecastHTML =
+      weatherForecastHTML+ `
+      <div class="col-6">
+                  <div class="p-3 border">${day} 
+                    <span class="grades" id ="weather-temperature">21°C</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 border">
+                    <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="20"/>
+                  </div>
+                </div>`;
+  });
+
+  weatherForecastHTML = weatherForecastHTML + `</div>`;
+  weatherForecastElement.innerHTML = weatherForecastHTML;
+  console.log(weatherForecastHTML)
+}
+
 function showWeather(response) {
   document.querySelector("#special-city").innerHTML = response.data.name;
   celciusTemperature = document.querySelector("#temperature").innerHTML =
@@ -60,6 +94,7 @@ function displayCelciusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
 let celciusTemperature = null;
+function displayweatherForecast()
 
 let celciusTemp = document.querySelector("#celcius-temp");
 celciusTemp.addEventListener("click", displayCelciusTemperature);
