@@ -32,9 +32,7 @@ h3 {
   color: rgba(14, 6, 129, 0.747);
 }
 h1,
-#fahrenheit-temp,
-#celcius-temp,
-.separator {
+.units {
   font-size: 33px;
   text-decoration: none;
 }
@@ -45,7 +43,7 @@ h3 {
 ul {
   list-style: none;
   color: whitesmoke;
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 20px;
   font-weight: 100;
   text-transform: capitalize;
@@ -53,8 +51,8 @@ ul {
   margin-left: 20%;
 }
 
-.grades,
-.separator {
+.units,
+.grades {
   color: whitesmoke;
 }
 
