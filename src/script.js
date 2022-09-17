@@ -35,9 +35,9 @@ function displayweatherForecast(response) {
   let weatherForecast = response.data.daily;
   let weatherForecastElement = document.querySelector("#weather-forecast");
 
-  let weatherForecastHTML = `<div class="row">`;
+  let weatherForecastHTML = `<div class="row g-4">`;
   weatherForecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       weatherForecastHTML =
         weatherForecastHTML +
         `
